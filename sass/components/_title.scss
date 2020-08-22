@@ -1,0 +1,6 @@
+.clients-title,
+.team-title,
+.what-are-we-doing-title {
+  @include font-stile(700, 36px, 1.16, $title-text-color);
+  text-align: center;
+}

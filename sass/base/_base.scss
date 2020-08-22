@@ -1,0 +1,43 @@
+Html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: $text-dark-theme-color;
+  font-family: $main-font;
+  color: $text-white-theme-color;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+  animation-name: opacity;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+img {
+  display: block;
+}
+textarea {
+  resize: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea,
+input {
+  outline: 0;
+}

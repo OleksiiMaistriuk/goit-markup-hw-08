@@ -1,0 +1,33 @@
+.hero {
+  padding-bottom: 200px;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background-color: $text-white-theme-color;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../image/фон/герой-фон.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-title {
+  margin-bottom: 30px;
+  @include font-stile(900, 44px, 1.36, $text-dark-theme-color, 0.06em);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  @extend %button;
+  padding: 10px 32px 10px 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: scaleButton;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

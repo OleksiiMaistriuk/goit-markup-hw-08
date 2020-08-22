@@ -1,0 +1,9 @@
+.footer-logo,
+.navigation-link-logo {
+  @include font-stile(700, 26px, 1.2, $text-dark-theme-color);
+  margin-right: 85px;
+  font-family: $logo-font;
+  .web {
+    color: $accent-color;
+  }
+}

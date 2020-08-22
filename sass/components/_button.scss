@@ -1,0 +1,9 @@
+%button {
+  @include font-stile(700, 16px, 1.87, $text-dark-theme-color, 0.06em);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: $accent-color;
+  border-radius: 4px;
+  border-color: $accent-color;
+  border-style: none;
+  cursor: pointer;
+}

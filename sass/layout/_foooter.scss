@@ -1,0 +1,110 @@
+.footer {
+  max-width: 1600px;
+  background-color: $footer-background-color;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .conteiner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+  }
+}
+.footer-logo {
+  color: $text-dark-theme-color;
+}
+.footer-address-list {
+  margin-right: 69px;
+}
+.footer-maps {
+  color: $text-dark-theme-color;
+}
+.footer-address-link {
+  font-size: 14px;
+  line-height: 1.7;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer-address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.opasity-color {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-center {
+  margin-right: 94px;
+}
+.footer-center-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer-center-social-link {
+  @extend %position-center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 22px, contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  fill: $text-dark-theme-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.footer-center-list {
+  display: flex;
+}
+.footer-center-social-link-picture {
+  width: 20px;
+  height: 20px;
+}
+.footer-right-title,
+.footer-center-title {
+  @include font-stile(700, 14px, 1.14, $text-dark-theme-color);
+  margin-top: 12px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  button {
+    @extend %button;
+    padding: 10px 28px 10px 28px;
+    @extend %position-center;
+  }
+  input {
+    margin-right: 12px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    @include font-stile(400, 16px, 1.25, rgba(255, 255, 255, 0.6));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+  }
+}
+
+.footer-right-form {
+  display: flex;
+}
+.footer-right-svg {
+  width: 24px;
+  height: 24px;
+  fill: $text-dark-theme-color;
+  margin-left: 10px;
+}
