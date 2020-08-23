@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio</title>
+    <title>Web Studio(Version 2.0)</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
@@ -16,11 +16,16 @@
   </head>
   <body>
     <header class="header">
-      <div class="conteiner">
-        <nav class="navigation">
-          <a class="navigation-link-logo link" href="./index.html" lang="en"
-            ><span class="web">Web</span> Studio</a
-          >
+      <div class="container">
+        <a class="navigation-link-logo link" href="./index.html" lang="en"
+          ><span class="web">Web</span>Studio</a >
+          <button type="button" class="header-menu-button" aria-expanded="false" aria-controls="navigation" data-menu-button>
+            <svg width="40" height="40" >
+              <use class="icon-burger" href="./image/sprite.svg#icon-menu_40px" ></use>
+              <use class="icon-close" href="./image/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+        <nav data-menu class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-list-item">
               <a class="navigation-list-link link active" href="">Студия</a>
@@ -34,7 +39,7 @@
               <a class="navigation-list-link link" href="">Контакты</a>
             </li>
           </ul>
-          <div class="address-conteiner">
+          <div class="address-container">
             <ul class="navigation-adress list">
               <li class="navigation-address-list">
                 <a
@@ -70,18 +75,18 @@
 
     <main>
       <!-- hero -->
-
+<!-- 
       <section class="hero">
         <h1 class="hero-title">
           эффективные решения<br />
           для вашего бизнеса
         </h1>
         <button data-modal-open class="hero-button">Заказать услугу</button>
-      </section>
+      </section> -->
 
       <!-- наши качества -->
-      <section class="our-nations">
-        <div class="conteiner">
+      <!-- <section class="our-nations">
+        <div class="container">
           <h2 hidden>наши качества</h2>
           <ul class="our-nations-list list">
             <li class="our-nations-item">
@@ -134,11 +139,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- чем мы занимаемся -->
-      <section class="what-are-we-doing">
-        <div class="conteiner">
+      <!-- <section class="what-are-we-doing">
+        <div class="container">
           <h2 class="what-are-we-doing-title">Чем мы занимаемся</h2>
           <ul class="what-are-we-doing-list list">
             <li class="what-are-we-doing-item">
@@ -170,11 +175,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наша команда -->
-      <section class="team">
-        <div class="conteiner">
+      <!-- <section class="team">
+        <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
@@ -407,11 +412,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Постоянные клиенты -->
-      <section class="clients">
-        <div class="conteiner">
+      <!-- <section class="clients">
+        <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
             <li class="clients-item">
@@ -462,7 +467,7 @@
     </main>
 
     <footer class="footer">
-      <div class="conteiner">
+      <div class="container">
         <div class="footer-left">
           <p class="footer-logo" lang="en">
             <span class="web">Web</span> Studio
@@ -559,9 +564,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- форма заказть услугу -->
-    <div data-modal class="backdrop is-hidden">
+    <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <button data-modal-close type="button" class="backdrop-close-button">
@@ -650,6 +655,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

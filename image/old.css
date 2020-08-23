@@ -61,7 +61,7 @@ textarea {
   margin: 0;
   padding: 0;
 }
-.conteiner {
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -77,7 +77,8 @@ textarea {
 }
 textarea,
 input {
-  outline: 0;}
+  outline: 0;
+}
 @keyframes scaleButton {
   from {
     transform: scale(0);
@@ -163,7 +164,7 @@ input {
 /* ---------------------------------------- */
 /* our nations */
 /* ---------------------------------------- */
-.our-nations .conteiner {
+.our-nations .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -203,7 +204,7 @@ input {
 /* ---------------------------------------- */
 /* what are we doing */
 /* ---------------------------------------- */
-.what-are-we-doing .conteiner {
+.what-are-we-doing .container {
   padding-bottom: 94px;
 }
 .what-are-we-doing-title {
@@ -239,7 +240,7 @@ input {
 /* ---------------------------------------- */
 /* team */
 /* ---------------------------------------- */
-.team .conteiner {
+.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -320,7 +321,7 @@ input {
 /* ---------------------------------------- */
 /* clients */
 /* ---------------------------------------- */
-.clients .conteiner {
+.clients .container {
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -354,7 +355,7 @@ input {
 /* ---------------------------------------- */
 /* foooter */
 /* ---------------------------------------- */
-.footer .conteiner {
+.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
@@ -493,7 +494,7 @@ input {
 /* ---------------------------------------- */
 /* portfolio */
 /* ---------------------------------------- */
-.portfolio-filter .conteiner {
+.portfolio-filter .container {
   padding-bottom: 94px;
   padding-top: 93px;
 }
