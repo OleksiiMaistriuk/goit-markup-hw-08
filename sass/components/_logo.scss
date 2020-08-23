@@ -4,7 +4,7 @@
     @include font-stile(700, 24px, 1.16, $text-dark-theme-color);
   }
   @media screen and (min-width: 1200px) {
-    @include font-stile(700, 26px, 1.2, $text-dark-theme-color);
+    @include font-stile(700, 26px, 1.19, $text-dark-theme-color);
   }
   font-family: $logo-font;
   .web {

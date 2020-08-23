@@ -1,7 +1,7 @@
 .our-nations {
   .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .our-nations-title {
@@ -9,25 +9,77 @@
   @include font-stile(700, 14px, 1.14, $title-text-color);
   text-transform: uppercase;
 }
-.our-nations-list {
-  display: flex;
-}
-.our-nations-picture {
-  width: 70px;
-  height: 70px;
-}
 .our-nations-picture-div {
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: $button-background-color;
   border-radius: 4px;
   @extend %position-center;
 }
-.our-nations-item:not(:last-child) {
-  margin-right: 30px;
+.our-nations-picture {
+  width: 70px;
+  height: 70px;
 }
 .our-nations-text {
   font-size: 14px;
   line-height: 1.7;
 }
+.our-nations-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-nations-title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-nations {
+    .container {
+      width: 768px;
+    }
+  }
+  .our-nations-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .our-nations-item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-nations {
+    .container {
+      width: 1200px;
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+}
+
+// .our-nations-list {
+//   display: flex;
+// }
+// .our-nations-picture {
+//   width: 70px;
+//   height: 70px;
+// }
+// .our-nations-picture-div {
+//   margin-bottom: 30px;
+//   width: 270px;
+//   height: 120px;
+//   background-color: $button-background-color;
+//   border-radius: 4px;
+//   @extend %position-center;
+// }
+// .our-nations-item:not(:last-child) {
+//   margin-right: 30px;
+// }
+// .our-nations-text {
+//   font-size: 14px;
+//   line-height: 1.7;
+// }
