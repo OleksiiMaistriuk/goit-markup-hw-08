@@ -44,8 +44,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
   .hero-title {
-    width: 1200;
     font-size: 44px;
     line-height: 1.36;
   }

@@ -97,8 +97,8 @@ button {
   .container {
     width: 480px;
     margin: 0 auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -340,14 +340,16 @@ button {
   margin-right: 10px;
 }
 
+.header .container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    outline: 1px solid red;
-  }
   .active::after {
     content: '';
     bottom: -8px;
@@ -424,6 +426,8 @@ button {
     margin-right: 50px;
   }
   .navigation-list-link {
+    margin-top: 100%;
+    margin-bottom: 100%;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -431,7 +435,6 @@ button {
     font-size: 12px;
     line-height: 1.16;
   }
-  .container,
   .navigation,
   .navigation-list {
     display: flex;

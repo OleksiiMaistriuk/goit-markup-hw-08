@@ -42,15 +42,22 @@
       width: 768px;
     }
   }
-  .our-nations-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+
   .our-nations-item {
     width: 354px;
   }
 }
+.our-nations-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+// @media screen and (max-width: 1199px) {
+//   .our-nations-list {
+
+//   }
+// }
 @media screen and (min-width: 1200px) {
   .our-nations {
     .container {
@@ -58,6 +65,9 @@
       padding-top: 94px;
       padding-bottom: 94px;
     }
+  }
+  .our-nations-item {
+    width: 270px;
   }
 }
 

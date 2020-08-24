@@ -90,7 +90,8 @@ button {
   color: #757575;
 }
 
-.modal-send, .form-field-checkbox label, .our-nations-picture-div, .what-are-we-doing-list, .what-are-we-doing-text, .team-social-list, .team-social-link, .clients-item-link, .footer-center-social-link, .footer-right button {
+.modal-send, .form-field-checkbox label, .our-nations-picture-div, .what-are-we-doing-text,
+.what-are-we-doing-list, .team-social-list, .team-social-link, .clients-item-link, .footer-center-social-link, .footer-right button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,8 +106,8 @@ button {
   .container {
     width: 480px;
     margin: 0 auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -436,14 +437,16 @@ button {
   margin-right: 10px;
 }
 
+.header .container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    outline: 1px solid red;
-  }
   .active::after {
     content: '';
     bottom: -8px;
@@ -520,6 +523,8 @@ button {
     margin-right: 50px;
   }
   .navigation-list-link {
+    margin-top: 100%;
+    margin-bottom: 100%;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -527,7 +532,6 @@ button {
     font-size: 12px;
     line-height: 1.16;
   }
-  .container,
   .navigation,
   .navigation-list {
     display: flex;
@@ -614,8 +618,10 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
   .hero-title {
-    width: 1200;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -668,13 +674,15 @@ button {
   .our-nations .container {
     width: 768px;
   }
-  .our-nations-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .our-nations-item {
     width: 354px;
   }
+}
+
+.our-nations-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
@@ -683,94 +691,44 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .our-nations-item {
+    width: 270px;
+  }
 }
 
-.what-are-we-doing .container {
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .what-are-we-doing {
+    display: none;
+  }
 }
 
-.what-are-we-doing-title {
-  margin-bottom: 50px;
-}
-
-.what-are-we-doing-item {
-  max-height: 294px;
-  position: relative;
-}
-
-.what-are-we-doing-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.what-are-we-doing-text {
-  width: 100%;
-  height: 70px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.3;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
-}
-
-.team {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  background-color: #f5f4fa;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.team-title {
-  margin-bottom: 50px;
-}
-
-.team-list {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.team-item {
-  background: #ffffff;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 0px 0px 4px 4px;
-  padding-bottom: 21px;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-text,
-.team-item-title {
-  font-size: 16px;
-  line-height: 1.18;
-}
-
-.team-foto {
-  display: inline-block;
-  margin-bottom: 30px;
-}
-
-.team-item-title {
-  font-weight: 500;
-  color: #212121;
-  margin-bottom: 10px;
-}
-
-.team-text {
-  margin-bottom: 16px;
+@media screen and (min-width: 1200px) {
+  .what-are-we-doing .container {
+    padding-bottom: 94px;
+  }
+  .what-are-we-doing-title {
+    margin-bottom: 50px;
+  }
+  .what-are-we-doing-item {
+    max-height: 294px;
+    position: relative;
+  }
+  .what-are-we-doing-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .what-are-we-doing-text {
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .team-social-link {
@@ -796,8 +754,55 @@ button {
   height: 20px;
 }
 
-.team-social-item:not(:last-child) {
-  margin-right: 10px;
+.team-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-item {
+  width: 100%;
+  padding-bottom: 24px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child),
+.team-photo,
+.team-title {
+  margin-bottom: 30px;
+}
+
+.team-photo {
+  width: 100%;
+  height: 460px;
+}
+
+.team {
+  background-color: #f5f4fa;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .clients .container {
