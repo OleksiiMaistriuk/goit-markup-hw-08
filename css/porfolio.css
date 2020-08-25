@@ -113,8 +113,8 @@ button {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -366,7 +366,7 @@ button {
     height: 394px;
     position: absolute;
     border-top: 1px solid #ececec;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translateY(-100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: -1;
@@ -417,7 +417,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .header .container {
-    outline: 1px solid red;
     padding-top: 26px;
     padding-bottom: 26px;
   }

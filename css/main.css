@@ -122,8 +122,8 @@ button {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -463,7 +463,7 @@ button {
     height: 394px;
     position: absolute;
     border-top: 1px solid #ececec;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translateY(-100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: -1;
@@ -514,7 +514,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .header .container {
-    outline: 1px solid red;
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -706,7 +705,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .what-are-we-doing .container {
-    padding-bottom: 94px;
+    padding-top: 0;
   }
   .what-are-we-doing-title {
     margin-bottom: 50px;
@@ -837,22 +836,15 @@ button {
   }
 }
 
-.clients .container {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
-.clients-title {
-  margin-bottom: 50px;
-}
-
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   cursor: pointer;
 }
 
 .clients-item-link {
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -865,8 +857,43 @@ button {
   border: 1px solid #2196f3;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .clients-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .clients-item:nth-child(5n) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-item {
+    width: 226px;
+    margin-bottom: 30px;
+  }
+  .clients-item:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    margin-bottom: 50px;
+  }
+  .clients-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .clients-item-link {
+    width: 170px;
+  }
 }
 
 .footer {
