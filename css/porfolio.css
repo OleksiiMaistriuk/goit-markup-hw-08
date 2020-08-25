@@ -105,16 +105,16 @@ button {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -416,8 +416,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .header .container {
     outline: 1px solid red;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .navigation-list-item {
     position: relative;
@@ -459,6 +461,10 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .header .container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
   .navigation-adress {
     display: flex;
     align-items: center;
@@ -474,7 +480,7 @@ button {
     margin-right: 305px;
   }
   .active::after {
-    bottom: -173%;
+    bottom: -175%;
   }
 }
 

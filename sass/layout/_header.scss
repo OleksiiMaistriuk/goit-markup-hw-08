@@ -121,10 +121,13 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    outline: 1px solid red;
+  .header {
+    .container {
+      outline: 1px solid red;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
   }
-
   .navigation-list-item {
     position: relative;
     &:not(:last-child) {
@@ -167,6 +170,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    .container {
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+  }
+
   .navigation-adress {
     display: flex;
     align-items: center;
@@ -182,7 +192,7 @@
     margin-right: 305px;
   }
   .active::after {
-    bottom: -173%;
+    bottom: -175%;
   }
 }
 

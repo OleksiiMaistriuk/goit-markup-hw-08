@@ -114,16 +114,16 @@ button {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -513,8 +513,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .header .container {
     outline: 1px solid red;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .navigation-list-item {
     position: relative;
@@ -556,6 +558,10 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .header .container {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
   .navigation-adress {
     display: flex;
     align-items: center;
@@ -571,7 +577,7 @@ button {
     margin-right: 305px;
   }
   .active::after {
-    bottom: -173%;
+    bottom: -175%;
   }
 }
 
@@ -671,9 +677,6 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .our-nations .container {
-    width: 768px;
-  }
   .our-nations-item {
     width: 354px;
   }
@@ -687,7 +690,6 @@ button {
 
 @media screen and (min-width: 1200px) {
   .our-nations .container {
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -771,6 +773,7 @@ button {
 }
 
 .team-text {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -787,7 +790,7 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(:last-child),
+.team-item,
 .team-photo,
 .team-title {
   margin-bottom: 30px;
@@ -803,6 +806,35 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .team-item {
+    width: 354px;
+  }
+  .team-photo {
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: 270px;
+  }
+  .team-photo {
+    height: 260px;
+  }
 }
 
 .clients .container {

@@ -37,12 +37,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .our-nations {
-    .container {
-      width: 768px;
-    }
-  }
-
   .our-nations-item {
     width: 354px;
   }
@@ -53,15 +47,9 @@
   justify-content: space-between;
 }
 
-// @media screen and (max-width: 1199px) {
-//   .our-nations-list {
-
-//   }
-// }
 @media screen and (min-width: 1200px) {
   .our-nations {
     .container {
-      width: 1200px;
       padding-top: 94px;
       padding-bottom: 94px;
     }
