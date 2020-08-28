@@ -90,7 +90,7 @@ button {
   color: #757575;
 }
 
-.modal-send, .form-field-checkbox label, .our-nations-picture-div, .what-are-we-doing-text,
+.modal-send, .our-nations-picture-div, .what-are-we-doing-text,
 .what-are-we-doing-list, .team-social-list, .team-social-link, .clients-item-link, .footer-center-social-link, .footer-right button {
   display: flex;
   align-items: center;
@@ -140,8 +140,7 @@ button {
 }
 
 .modal {
-  padding: 40px 39px 40px 41px;
-  max-width: 528px;
+  padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -288,6 +287,8 @@ button {
   margin-bottom: 29px;
   font-size: 14px;
   line-height: 1.71;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -300,6 +301,11 @@ button {
   border: 0px;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.form-field-checkbox svg {
+  display: flex;
+  flex-shrink: 0;
 }
 
 .form-field-checkbox input:checked + .icon {
@@ -320,6 +326,17 @@ button {
 .form-field-checkbox a {
   margin-left: 3px;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .form-field-checkbox label {
+    display: flex;
+    flex-shrink: 0;
+  }
 }
 
 .modal-button-send, .hero-button, .footer-right button {
@@ -1028,6 +1045,9 @@ button {
   .footer-center {
     margin-right: 89px;
   }
+  .footer-left {
+    margin-left: 76px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1048,9 +1068,6 @@ button {
   .footer-right-form input {
     width: 450px;
   }
-  .footer-left {
-    margin-left: 76px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1061,6 +1078,9 @@ button {
   .footer-right button,
   .footer-center button {
     height: 50px;
+  }
+  .footer-left {
+    margin-left: 0;
   }
   .footer-right-form input {
     width: 358px;
