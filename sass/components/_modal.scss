@@ -162,10 +162,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  svg {
-    display: flex;
-    flex-shrink: 0;
-  }
+
   input:checked + .icon {
     background-color: $accent-color;
     border-color: transparent;
@@ -174,28 +171,29 @@
 }
 .icon {
   display: inline-block;
+  align-items: center;
+  flex-shrink: 0;
   width: 15px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 6px;
   border: 1px solid black;
   border-radius: 3px;
 }
+
 .form-field-checkbox {
   a {
-    margin-left: 3px;
     color: $accent-color;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    width: 100%;
   }
-  .form-field-checkbox {
-    label {
-      display: flex;
-      flex-shrink: 0;
-    }
+  .form-field-checkbox-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
   }
 }

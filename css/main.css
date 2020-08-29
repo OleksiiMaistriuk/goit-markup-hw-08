@@ -107,7 +107,8 @@ button {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -303,11 +304,6 @@ button {
   overflow: hidden;
 }
 
-.form-field-checkbox svg {
-  display: flex;
-  flex-shrink: 0;
-}
-
 .form-field-checkbox input:checked + .icon {
   background-color: #2196f3;
   border-color: transparent;
@@ -316,26 +312,28 @@ button {
 
 .icon {
   display: inline-block;
+  align-items: center;
+  flex-shrink: 0;
   width: 15px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 6px;
   border: 1px solid black;
   border-radius: 3px;
 }
 
 .form-field-checkbox a {
-  margin-left: 3px;
   color: #2196f3;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    width: 100%;
   }
-  .form-field-checkbox label {
-    display: flex;
-    flex-shrink: 0;
+  .form-field-checkbox-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 
@@ -487,12 +485,11 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    pointer-events: none;
   }
   .navigation.is-open {
     opacity: 1;
     transform: translateY(0);
-    z-index: 1;
+    z-index: 99999;
   }
   .icon-close {
     opacity: 0;
@@ -602,6 +599,7 @@ button {
   margin-right: auto;
   background-color: #757575;
   position: relative;
+  width: 100%;
 }
 
 .hero-title {
@@ -812,7 +810,6 @@ button {
 
 .team-photo {
   width: 100%;
-  height: 460px;
 }
 
 .team {
@@ -859,7 +856,7 @@ button {
 }
 
 .clients-item-link {
-  width: 210px;
+  max-width: 200px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -873,11 +870,14 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .clients-item:not(:last-child) {
+  .clients-item {
+    width: calc((100% - 30px) / 2);
+  }
+  .clients-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
-  .clients-item:nth-child(5n) {
-    margin-bottom: 0px;
+  .clients-item:not(:nth-child(2n)) {
+    margin-right: 30px;
   }
 }
 

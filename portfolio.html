@@ -17,10 +17,28 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a class="navigation-link-logo link" href="./index.html" lang="en"
-            ><span class="web">Web</span> Studio</a
-          >
+        <a class="navigation-link-logo link" href="./index.html" lang="en"
+          ><span class="web">Web</span>Studio</a
+        >
+        <button
+          type="button"
+          class="header-menu-button"
+          aria-expanded="false"
+          aria-controls="navigation"
+          data-menu-button
+        >
+          <svg width="40" height="40">
+            <use
+              class="icon-burger"
+              href="./image/sprite.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="icon-close"
+              href="./image/sprite.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
+        <nav data-menu class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-list-item">
               <a class="navigation-list-link link" href="./index.html"
@@ -51,11 +69,8 @@
                 >
               </li>
               <li class="navigation-address-list">
-                <a
-                  class="navigation-address-link link"
-                  href="tel:+380961111111"
-                >
-                  <svg
+                <a class="navigation-address-link link" href="tel:+380961111111"
+                  ><svg
                     width="15"
                     height="20"
                     class="navigation-social-link-picture"
@@ -107,8 +122,6 @@
                     <img
                       class="works-item-img"
                       src="./image/портфолио/Технокряк.jpg"
-                      width="370"
-                      height="294"
                       alt="ноутбук"
                     />
                     <p class="works-item-overlay-text">
@@ -131,8 +144,6 @@
                     <img
                       class="works-item-img"
                       src="./image/портфолио/Постер-New-Orlean-vs-Golden-Star.jpg"
-                      width="370"
-                      height="294"
                       alt="баскетболисты"
                     />
                     <p class="works-item-overlay-text">
@@ -157,8 +168,6 @@
                     <img
                       class="works-item-img"
                       src="./image/портфолио/Ресторан-Seafood.jpg"
-                      width="370"
-                      height="294"
                       alt="логотип ресторана"
                     />
                     <p class="works-item-overlay-text">
@@ -183,8 +192,6 @@
                     <img
                       class="works-item-img"
                       src="./image/портфолио/Проект-Prime.jpg"
-                      width="370"
-                      height="294"
                       alt="наушники"
                     />
                     <p class="works-item-overlay-text">
@@ -209,8 +216,6 @@
                     <img
                       class="works-item-img"
                       src="./image/портфолио/Проект-Boxes.jpg"
-                      width="370"
-                      height="294"
                       alt="коробки"
                     />
                     <p class="works-item-overlay-text">
@@ -235,8 +240,6 @@
                     <img
                       class="works-item-img"
                       src="./image/портфолио/Inspiration-has-no-Borders.jpg"
-                      width="370"
-                      height="294"
                       alt="монитор"
                     />
                     <p class="works-item-overlay-text">
@@ -262,8 +265,6 @@
                     <img
                       class="works-item-img"
                       src="./image/портфолио/Издание-Limited-Edition.jpg"
-                      width="370"
-                      height="294"
                       alt="бирка"
                     />
                     <p class="works-item-overlay-text">
@@ -289,8 +290,6 @@
                     <img
                       class="works-item-img"
                       src="./image/портфолио/Проект-LAB.jpg"
-                      width="370"
-                      height="294"
                       alt="бирка"
                     />
                     <p class="works-item-overlay-text">
@@ -315,8 +314,6 @@
                     <img
                       class="works-item-img"
                       src="./image/портфолио/Growing-Business.jpg"
-                      width="370"
-                      height="294"
                       alt="ноутбук и руки"
                     />
                     <p class="works-item-overlay-text">
@@ -424,8 +421,10 @@
         <div class="footer-right">
           <b class="footer-right-title"> подпишитесь на рассылку</b>
           <form class="footer-right-form">
-            <label for="mail"></label>
-            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            <label
+              ><input type="email" name="mail" placeholder="E-mail"
+            /></label>
+
             <button type="submit">
               подписаться<svg class="footer-right-svg">
                 <use href="./image/sprite.svg#icon-plane"></use>
@@ -435,5 +434,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
