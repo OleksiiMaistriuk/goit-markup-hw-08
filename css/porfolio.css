@@ -660,7 +660,7 @@ button {
     justify-content: space-between;
   }
   .footer-right-form input {
-    max-width: 450px;
+    width: 450px;
   }
   .footer-center {
     margin-right: 89px;
