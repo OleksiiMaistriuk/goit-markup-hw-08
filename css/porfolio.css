@@ -331,9 +331,6 @@ button {
   .works-list {
     justify-content: center;
   }
-  .works-item-img {
-    width: 370px;
-  }
 }
 
 .navigation-list-link {
