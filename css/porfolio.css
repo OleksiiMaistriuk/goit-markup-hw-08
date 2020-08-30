@@ -659,6 +659,9 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .footer-right-form input {
+    max-width: 450px;
+  }
   .footer-center {
     margin-right: 89px;
   }
@@ -681,9 +684,6 @@ button {
   }
   .footer-right button {
     margin: 0 auto;
-  }
-  .footer-right-form input {
-    width: 450px;
   }
 }
 

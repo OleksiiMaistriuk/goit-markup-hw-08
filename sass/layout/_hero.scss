@@ -84,7 +84,7 @@
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
+    max-width: 1600px;
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.8),
