@@ -20,7 +20,6 @@
 }
 .works-item-img {
   width: 100%;
-  height: 294px;
 }
 .portfolio-filter-list {
   margin-bottom: 40px;
@@ -31,9 +30,14 @@
   margin-right: 8px;
 }
 .works-item-title {
+  // width: 100%;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
   margin-bottom: 4px;
   @include font-stile(700, 18px, 2, $title-text-color, 0.06em);
 }
+
 .works-list {
   display: flex;
   flex-wrap: wrap;
